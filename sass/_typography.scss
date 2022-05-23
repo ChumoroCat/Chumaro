@@ -1,0 +1,32 @@
+.heading-1 {
+    font-size: 4.5rem;
+    font-weight: 400;
+    color: $color-grey-light-1;
+
+    align-self: flex-start;
+}
+
+.heading-3 {
+    color: $color-primary;
+    font-size: 2rem;
+    text-transform: uppercase;
+
+    align-self: flex-end;
+}
+
+.heading-4 {
+    color: $color-primary;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+
+    align-self: flex-end;
+}
+
+.heading-5 {
+    color: $color-primary;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    padding-bottom: 1.5rem;
+
+    align-self: flex-end;
+}

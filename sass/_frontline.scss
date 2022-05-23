@@ -1,0 +1,43 @@
+.frontline {
+    background-color: $color-secondary;
+    grid-column: col-start 7 / full-end;
+
+    padding: 3rem;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+
+    @media only screen and (max-width: $bp-medium) {
+        grid-column: 1 / -1;
+    }
+
+    &-list {
+        display: grid;
+        grid-template-columns: min-content max-content;
+        align-items: center;
+        grid-column-gap: 1.5rem;
+        grid-row-gap: 4vh;
+
+        @media only screen and (max-width: $bp-medium) {
+            grid-template-columns: repeat(3, min-content max-content);
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            grid-template-columns: min-content max-content;
+
+        }
+    }
+
+    &-img {
+        width: 5.5rem;
+        border-radius: 50%;
+        display: block;
+    }
+
+    &-saved {
+        text-transform: uppercase;
+        color: white;
+        font-size: 1.2rem;
+    }
+}

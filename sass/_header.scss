@@ -1,0 +1,48 @@
+.header {
+    background-color: $color-grey-dark-1;
+    grid-column: full-start / col-end 6;
+
+    background-image: linear-gradient(rgba($color-secondary, .8), rgba($color-secondary, .8)), 
+                        url(../img/cover.jpg);
+    background-size: cover;
+    background-position: center;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr .5fr;
+    grid-row-gap: 2rem;
+
+    padding: 3rem 7rem;
+
+    @media only screen and (max-width: $bp-medium) {
+        grid-column: 1 / -1;
+    }
+
+    &-btn {
+        background-color: $color-primary;
+        font-size: 2.5rem;
+
+        &:hover {
+            background-color: $color-primary-dark;
+            color: white;
+        }
+    }
+}
+
+.logo {
+    display: flex;
+    align-self: flex-start;
+    // justify-content: center;
+    // align-items: center;
+    height: 3rem;
+    width: 3rem;
+
+    &-text {
+        color: $color-primary;
+        font-size: 2rem;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
