@@ -3,7 +3,7 @@
     grid-column: full-start / full-end;
 
     display: grid;
-    grid-template-rows: 22vh 22vh;
+    grid-template-rows: 22vh auto;
     grid-gap: 2rem;
     padding: 2rem;
 
@@ -24,6 +24,7 @@
 
         @media only screen and (max-width: $bp-small) {
             padding: 3rem 5rem;
+            margin-top: 7rem;
         }
 
     }
@@ -52,6 +53,8 @@
             }
 
             @media only screen and (max-width: $bp-small) {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(3, 1fr);
                 padding: 1rem 0;
             }
         

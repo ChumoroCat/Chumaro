@@ -248,8 +248,8 @@ a {
   grid-column: full-start / full-end;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 22vh 22vh;
-      grid-template-rows: 22vh 22vh;
+  -ms-grid-rows: 22vh auto;
+      grid-template-rows: 22vh auto;
   grid-gap: 2rem;
   padding: 2rem;
 }
@@ -278,6 +278,7 @@ a {
 @media only screen and (max-width: 37.5em) {
   .footer-bottom {
     padding: 3rem 5rem;
+    margin-top: 7rem;
   }
 }
 
@@ -314,6 +315,10 @@ a {
 
 @media only screen and (max-width: 37.5em) {
   .footer-top-list {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
     padding: 1rem 0;
   }
 }
@@ -540,6 +545,7 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
 }
 
 .masks-top > h2 {
@@ -558,7 +564,7 @@ a {
 }
 
 @media only screen and (max-width: 50em) {
-  .masks {
+  .masks-bottom {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     -ms-grid-rows: (1fr)[4];
@@ -568,7 +574,7 @@ a {
 }
 
 @media only screen and (max-width: 37.5em) {
-  .masks {
+  .masks-bottom {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
     -ms-grid-rows: (1fr)[8];
